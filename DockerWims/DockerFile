@@ -88,5 +88,4 @@ RUN echo 'manager_site=172.17.0.2' > log/wims.conf
 RUN echo 'site_manager=2' >> log/wims.conf
 COPY myself /home/wims/log/classes/.connections/
 COPY .def /home/wims/log/classes/9001/
-RUN ./bin/apache-config
 RUN a2enmod cgi
